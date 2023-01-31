@@ -1,2 +1,1 @@
-welcome---
-workflow file---
+a workflow file
