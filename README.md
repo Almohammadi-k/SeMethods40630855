@@ -9,4 +9,4 @@ Test workflow
 [![Releases](https://img.shields.io/github/release/Almohammadi-k/sem/all.svg?style=flat-square)](https://github.com/Almohammadi-k/sem/releases)
 
 # Software Engineering Methods
-![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/Almohammadi-k/SeMethods40630855/main.yml/branch=develop?style=flat-square)
+![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/Almohammadi-k/SeMethods40630855/main.yml/badge.svg)
