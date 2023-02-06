@@ -1,6 +1,5 @@
-Added workflow files initial commit
-
-Test workflow
+# Software Engineering Methods
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/Almohammadi-k/SeMethods40630855/<action name taken from main.yml>/Develop?style=flat-square)
 
 ![workflow](https://github.com/Almohammadi-k/SeMethods40630855/actions/workflows/main.yml/badge.svg)
 
