@@ -1,4 +1,4 @@
-Added workflow file initial commit
+Added workflow files initial commit
 
 Test workflow
 
