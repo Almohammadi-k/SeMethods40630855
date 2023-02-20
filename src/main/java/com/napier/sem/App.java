@@ -23,7 +23,9 @@ public class App {
         a.disconnect();
     }
 
-    private void connect() {
+    private void connect()
+
+    {
     }
 
     static {
