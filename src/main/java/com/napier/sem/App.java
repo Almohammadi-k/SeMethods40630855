@@ -23,6 +23,7 @@ public class App {
         // Display results
         a.displayEmployee(emp);
 
+
         // Disconnect from database
         a.disconnect();
     }
