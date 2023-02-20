@@ -11,8 +11,9 @@ public class App {
     /**
      * Connect to the MySQL database.
      */
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
+
+
         // Create new Application
         App a = new App();
 
@@ -21,6 +22,8 @@ public class App {
 
         // Disconnect from database
         a.disconnect();
+
+
     }
 
     private void connect()
