@@ -104,15 +104,17 @@ public class App {
 //                            + "FROM employees "
 //                            + "WHERE emp_no = " + ID;
 
-            String strSelect =
-                    "SELECT employees.emp_no, first_name, last_name, titles.title as 'title', salaries.salary as 'salary', departments.dept_name as 'dept_name' "
-                            + ", (SELECT CONCAT(first_name ,' ',last_name)  FROM employees WHERE employees.emp_no = dept_manager.emp_no) as 'manager' "
-                            + "FROM employees inner join titles on employees.emp_no = titles.emp_no "
-                            + "INNER JOIN salaries on employees.emp_no = salaries.emp_no "
-                            + "INNER JOIN dept_emp on employees.emp_no = dept_emp.emp_no "
-                            + "INNER JOIN departments on dept_emp.dept_no = departments.dept_no "
-                            + "INNER JOIN dept_manager on dept_emp.dept_no = dept_manager.dept_no "
-                            + "WHERE employees.emp_no = " + ID;
+    String strSelect =
+          "SELECT employees.emp_no, first_name, last_name, titles.title as 'title', " +
+          "salaries.salary as 'salary', departments.dept_name as 'dept_name' "
+        + ", (SELECT CONCAT(first_name ,' ',last_name)  FROM employees " +
+          "  WHERE employees.emp_no = dept_manager.emp_no) as 'manager' "
+        + "FROM employees inner join titles on employees.emp_no = titles.emp_no "
+        + "INNER JOIN salaries on employees.emp_no = salaries.emp_no "
+        + "INNER JOIN dept_emp on employees.emp_no = dept_emp.emp_no "
+        + "INNER JOIN departments on dept_emp.dept_no = departments.dept_no "
+        + "INNER JOIN dept_manager on dept_emp.dept_no = dept_manager.dept_no "
+        + "WHERE employees.emp_no = " + ID;
             // Execute SQL statement
             ResultSet rset = stmt.executeQuery(strSelect);
             // Return new employee if valid.
@@ -147,12 +149,12 @@ public class App {
         {
             System.out.println(
                     emp.emp_no + " "
-                            + emp.first_name + " "
-                            + emp.last_name + "\n"
-                            + emp.title + "\n"
-                            + "Salary:" + emp.salary + "\n"
-                            + emp.dept_name + "\n"
-                            + "Manager: " + emp.manager + "\n");
+                  + emp.first_name + " "
+                  + emp.last_name + "\n"
+                  + emp.title + "\n"
+                  + "Salary:" + emp.salary + "\n"
+                  + emp.dept_name + "\n"
+                  + "Manager: " + emp.manager + "\n");
         }
     }
     }
