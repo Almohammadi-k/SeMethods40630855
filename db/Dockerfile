@@ -3,6 +3,7 @@ FROM mysql
 
 # Set the working directory
 WORKDIR /tmp
+
 # Copy all the files to the working directory of the container
 COPY test_db/*.sql /tmp/
 COPY test_db/*.dump /tmp/
