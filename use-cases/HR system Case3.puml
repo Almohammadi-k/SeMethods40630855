@@ -6,7 +6,7 @@ rectangle Database
 
 rectangle "HR System" {
     usecase UC4 as "Get salaries
-    in my Department"
+    By dept manager"
 
     usecase UCa as "Print salaries"
 
